@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		header{background:linear-gradient(45deg,lightblue,pink);width:100%;height:100px;text-align:center;}
+		footer{background-color:grey;width:100%;height:100px;text-align:center}
+		body{font-family:Garamond;}
+		img{height:300px;}
+		h3{background-color:lightgreen;font-size:30px;}
+		section{text-align:center;}
+		ul li a{margin:20px;text-decoration:none;position:relative;}
+		ul li a:hover{color:purple;}
+		ul li a::before{content:"";display:block;height:4px;background-color:#00FA9A;position:absolute;top:0;left:0;width:0%;transition:all ease-in-out 250ms;}
+		ul li a:hover::before{width:100%;}
+		.imagetwo{display:none;}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+		$(function() {
+
+			$('.imageone').click( function() {
+				$(this).hide();
+				$('.imagetwo').show();
+			});
+
+		});
+	</script>
+</head>
+<body>
+    <header>
+	<h1>Explore Maldives</h1>
+        <nav>
+            <ul>
+                <li style=display:inline-block><a href="index.html">Home</a></li>
+                <li style=display:inline-block><a href="destinations.html">Destinations</a></li>
+		<li style=display:inline-block><a href="places.html">Places to Stay</a></li>
+		<li style=display:inline-block><a href="food.html">Local Food</a></li>
+                <li style=display:inline-block><a href="ContactUs.html">Contact Us</a></li>
+		<li style=display:inline-block><a href="faq.html">FAQ</a></li>
+		<li style=display:inline-block><a href="customer feedback tourism.html">Customer Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<section>
+		<h3>Male</h3>
+		<img class="imageone" src="https://images.goway.com/production/hero/iStock-538010535.jpg" alt="Male">
+		<img class="imagetwo" src="https://www.livemoretravelmore.com/wp-content/uploads/2020/07/14625650018_fe95e6264a_c.jpg" alt="Male">
+		<p>The bustling capital of the Maldives, Male, offers a fascinating blend of old and new. The city is home to vibrant markets where you can find local goods, historic sites like the 17th-century Hukuru Miskiy (Friday Mosque), and the striking Islamic Centre with its golden dome. Stroll along the waterfront, visit the local fish market, or explore the Maldives National Museum to get a sense of the country's rich history and culture.</p>
+	</section>
+	<section>
+		<h3>Hulhumale Island</h3>
+		<img src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/02/cover-Places-to-Visit-in-Hulhumale.jpg" alt="Hulhumale Island">
+		<p>Just a short boat ride from Male, Hulhumale is an artificial island designed to alleviate congestion in the capital. It boasts a beautiful, wide beach lined with palm trees, making it a perfect spot for relaxation. The island features leafy neighborhoods, parks, and modern amenities. Hulhumale is also home to the Velana International Airport, making it a convenient gateway for visitors.</p>
+	</section>
+	<section>
+		<h3>Maafushi</h3>
+		<img src="https://content.r9cdn.net/rimg/dimg/73/3b/3f3bbac7-city-303229-16805215fed.jpg?width=1366&height=768&xhint=3162&yhint=1928&crop=true" alt="Maafushi">
+		<p>This island offers a mix of traditional Maldivian charm and tourist-friendly infrastructure. Maafushi is one of the inhabited islands of the Maldives, where visitors can experience local life while enjoying comfortable accommodations and activities like snorkeling, diving, and fishing trips. The island is known for its friendly locals, affordable guesthouses, and vibrant atmosphere, making it a great choice for travelers seeking an authentic experience.</p>
+	</section>
+	<section>
+		<h3>Raa Atoll</h3>
+		<img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2016/09/21/09/plankton.jpg?width=1200" alt="Raa Atoll">
+		<p>Known for its rich marine biodiversity, Raa Atoll is a paradise for divers and snorkelers. The atoll is home to stunning coral reefs teeming with colorful fish, rays, and even the occasional whale shark. It's also close to the UNESCO Baa Atoll Biosphere Reserve, offering even more opportunities to explore the underwater world. Luxurious resorts in Raa Atoll provide a perfect blend of relaxation and adventure for visitors.</p>
+	</section>
+	<section>
+		<h3>Fari Islands</h3>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWVkpcqZVtQ3pkKGMHCTVI2vMimWFNsJ9ZZQ&s" alt="Fari Islands">
+		<p>This luxurious destination offers a unique blend of modern design and natural beauty. The Fari Islands are known for their minimalist over-water villas, contemporary art installations, and high-end resorts. Guests can indulge in world-class dining, spa treatments, and water sports while surrounded by the serene turquoise waters of the Maldives. The Fari Islands are perfect for those seeking an opulent and serene escape.</p>
+	</section>
+
+
+    <footer>
+        <a href="https://travel.usnews.com/gallery/the-worlds-best-tourist-attractions">Other Places to Visit</a>
+	<p>This website was made by Marya Minal</p>
+    </footer>
+</body>
+</html>

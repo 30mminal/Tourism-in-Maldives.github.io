@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		header{background:linear-gradient(45deg,lightblue,pink);width:100%;height:100px;text-align:center;}
+		footer{background-color:grey;width:100%;height:100px;text-align:center}
+		body{text-align:center;font-family:Garamond;}
+		.nimg{width:200px;height:200px;}
+		section{font-family:Garamond;background-color:#cee2e2;}
+		section h1{text-shadow:-4px 4px #9064ff,-6px 8px #7542f5,-8px 12px #5822de;}
+		section .nimg{transition:width height transform 2s;margin:50px}
+		section .nimg:hover{transform:rotate(-30deg);width:300px;height:300px;}
+		.description{border:10px solid blue;width:70%;margin-left:15%;padding:10px;}
+		div{position:relative;height:400px;margin:5%;right:20%;}
+		div img{width:500px;height:200px;position:absolute;transition:opacity 1s ease-in-out;}
+		div img.top:hover{opacity:0;}
+		ul li a{margin:20px;text-decoration:none;position:relative;}
+		ul li a:hover{color:purple;}
+		ul li a::before{content:"";display:block;height:4px;background-color:#00FA9A;position:absolute;top:0;left:0;width:0%;transition:all ease-in-out 250ms;}
+		ul li a:hover::before{width:100%;}
+	</style>
+</head>
+<body>
+    <header>
+	<h1>Explore Maldives</h1>
+        <nav>
+            <ul>
+                <li style=display:inline-block><a href="index.html">Home</a></li>
+                <li style=display:inline-block><a href="destinations.html">Destinations</a></li>
+		<li style=display:inline-block><a href="places.html">Places to Stay</a></li>
+		<li style=display:inline-block><a href="food.html">Local Food</a></li>
+                <li style=display:inline-block><a href="ContactUs.html">Contact Us</a></li>
+		<li style=display:inline-block><a href="faq.html">FAQ</a></li>
+		<li style=display:inline-block><a href="customer feedback tourism.html">Customer Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	<section>
+		<h1>Local Foods in the Maldives</h1>
+		<img class="nimg" src="https://www.msc.org/images/default-source/au-library/mas-huni.jpg?sfvrsn=617b92c2_0" alt="Mas Huni">
+		<h3>Mas Huni</h3>
+
+		<img class="nimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvVWWcgv1MgMJZFBXRwCAbE6BSskgnxgnjPg&s" alt="Garudiya">
+		<h3>Garudiya</h3>
+
+		<img class="nimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZs32yYnZdD8WBOOv57CVoJ0wLLmsEqVWF7w&s" alt="Kulhi Boakibaa">
+		<h3>Kulhi Boakibaa</h3>
+
+		<img class="nimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTd9HNM-UykT1mg3Qsy2QwHI2K2g0Mb2CEEg&s" alt="Aluvi Boakibaa">
+		<h3>Aluvi Boakibaa</h3>
+
+		<img class="nimg" src="https://www.chefspencil.com/wp-content/uploads/Masroshi.jpg" alt="Masroshi">
+		<h3>Masroshi</h3>
+		<br>
+		<br>
+
+		<h3 class="description">Maldivian cuisine is a flavorful fusion of fresh seafood, coconut, and spices, with dishes like mas huni (tuna salad with coconut) and garudhiya (fish soup) as staples, reflecting the archipelago's reliance on ocean resources and tropical ingredients.</h3>
+
+	<div>
+		<img class="bottom" src="https://maldivesembassy.cn/wp-content/uploads/2023/05/Maldivianfood.jpg">
+		<img class="top" src="https://www.exoticca.com/_next/image?url=https%3A%2F%2Fuploads.exoticca.com%2Fen_US%2Fdestination%2Fgastronomy%2Fsweets-maldives.png&w=3840&q=75">
+	</div>
+		<br>
+		<br>
+	</section>
+
+<footer>
+        <a href="https://travel.usnews.com/gallery/the-worlds-best-tourist-attractions">Other Places to Visit</a>
+	<p>This website was made by Marya Minal</p>
+</footer>
+</body>
+</html>

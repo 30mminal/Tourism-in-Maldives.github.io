@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		header{background:linear-gradient(45deg,lightblue,pink);width:100%;height:100px;text-align:center;}
+		footer{background-color:grey;width:100%;height:100px;text-align:center}
+		ul li a{margin:20px;text-decoration:none;position:relative;}
+		ul li a:hover{color:purple;}
+		ul li a::before{content:"";display:block;height:4px;background-color:#00FA9A;position:absolute;top:0;left:0;width:0%;transition:all ease-in-out 250ms;}
+		ul li a:hover::before{width:100%;}
+		ul li{list-style:none;}
+		h2{display:inline;margin-right:70px;}
+		h1{text-align:center;}
+		div{background-color:#bbe5b8;border:5px solid #2b6027;text-align:center;width:80%;margin-left:10%;margin-bottom:20px;}
+		.question{margin:10px;}
+		body{font-family:Garamond;}
+		.answer{display:none;}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+		$(function() {
+
+			$('.question').click( function() {
+				var $ans = $(this).find('.answer');
+				if ($ans.hasClass('open')) {
+					$ans.removeClass('open');
+					$ans.slideUp();
+					$(this).find('span').text('+');
+				} else {
+					$ans.addClass('open');
+					$ans.slideDown();
+					$(this).find('span').text('-');
+				}
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+    <header>
+	<h1>Explore Maldives</h1>
+        <nav>
+            <ul>
+                <li style=display:inline-block><a href="index.html">Home</a></li>
+                <li style=display:inline-block><a href="destinations.html">Destinations</a></li>
+		<li style=display:inline-block><a href="places.html">Places to Stay</a></li>
+		<li style=display:inline-block><a href="food.html">Local Food</a></li>
+		<li style=display:inline-block><a href="ContactUs.html">Contact Us</a></li>
+		<li style=display:inline-block><a href="faq.html">FAQ</a></li>
+		<li style=display:inline-block><a href="customer feedback tourism.html">Customer Feedback</a></li>
+		
+            </ul>
+        </nav>
+    </header>
+
+	<h1>FAQ</h1>
+
+	<div><ul>
+		<li class="question">
+			<h2>What language do they speak in Maldives?</h2>
+			<span>+</span>
+			<p class="answer">While the national language is Dhivehi, most Maldivians can speak English with no problems.</p>
+		</li>
+
+		<li class="question">
+			<h2>Is it safe to swim in the Maldives?</h2>
+			<span>+</span>
+			<p class="answer">Swimming in the Maldives can be a wonderful experience, but it's important to be aware of the potential risks and take precautions. Avoid swimming in areas with strong currents, high waves or dangerous underwater conditions.</p>
+		</li>
+
+		<li class="question">
+			<h2>Is Maldives a country?</h2>
+			<span>+</span>
+			<p class="answer">Yes, the Maldives is a country. It is an independent island nation located in the Indian Ocean.</p>
+		</li>
+	</ul></div>
+
+    <footer>
+        <a href="https://travel.usnews.com/gallery/the-worlds-best-tourist-attractions">Other Places to Visit</a>
+	<p>This website was made by Marya Minal</p>
+    </footer>
+
+</body>
+</html>

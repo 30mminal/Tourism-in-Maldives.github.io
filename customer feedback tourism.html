@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script type = "text/javascript">
+	$(function() {
+
+		 $('.feedback').click(function(){
+				$(this).css({'background': 'lightgreen', 'color': '#155925'})
+
+		
+		});
+		
+		$('#f1').click(function(){
+			$(this).children('p').text('Wohoo!');
+
+		});
+
+		$('#f2').click(function(){
+			$(this).children('p').text('We will try our best to improve!');
+		});
+
+		$('#f3').click(function(){
+			$(this).children('p').text('Oh no! Sorry for this! :(');
+		});
+
+	});
+</script>
+
+<style>
+	.feedback{width:200px;height:200px;border-radius:50%;margin:20px;text-align:center;background:#a5dee6;color:black;font-size:20px;padding:20px;}
+	.problem{margin-top:70px}
+	header{background:linear-gradient(45deg,lightblue,pink);width:100%;height:100px;text-align:center;}
+	footer{background-color:grey;width:100%;height:100px;text-align:center}
+	body{font-family:Garamond;}
+	ul li a{margin:20px;text-decoration:none;position:relative;}
+	ul li a:hover{color:purple;}
+	ul li a::before{content:"";display:block;height:4px;background-color:#00FA9A;position:absolute;top:0;left:0;width:0%;transition:all ease-in-out 250ms;}
+	ul li a:hover::before{width:100%;}
+</style>
+
+</head>
+<body>
+
+    <header>
+	<h1>Explore Maldives</h1>
+        <nav>
+            <ul>
+                <li style=display:inline-block><a href="index.html">Home</a></li>
+                <li style=display:inline-block><a href="destinations.html">Destinations</a></li>
+		<li style=display:inline-block><a href="places.html">Places to Stay</a></li>
+		<li style=display:inline-block><a href="food.html">Local Food</a></li>
+                <li style=display:inline-block><a href="ContactUs.html">Contact Us</a></li>
+		<li style=display:inline-block><a href="faq.html">FAQ</a></li>
+		<li style=display:inline-block><a href="customer feedback tourism.html">Customer Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<h1>Customer Feedback</h1>
+<p>Click on the circles to get feedback.</p>
+<div class="feedback" id="f1"><p class="problem">The website works</p></div>
+<div class="feedback" id="f2"><p class="problem">There is a problem with the website</p></div>
+<div class="feedback" id="f3"><p class="problem">The website does not work</p>	</div>
+
+    <footer>
+        <a href="https://travel.usnews.com/gallery/the-worlds-best-tourist-attractions">Other Places to Visit</a>
+	<p>This website was made by Marya Minal</p>
+    </footer>
+
+</body>
+</html>

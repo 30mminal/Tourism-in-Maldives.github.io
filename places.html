@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		header{background:linear-gradient(45deg,lightblue,pink);width:100%;height:100px;text-align:center;}
+		footer{background-color:grey;width:100%;height:100px;text-align:center}
+		body{font-family:Garamond;}
+		img{height:300px;width:500px}
+		table{font-family:Garamond;border-collapse:collapse;}
+		thead{background-color:green;}
+		tbody{background-color:#cdf7d6;}
+		thead th{padding:10px;}
+		tbody td{padding:10px;}
+		tfoot{background-color:aquamarine;text-align:center;padding:10px;font-weight:bold;}
+		tfoot tr{height:100px;}
+		.animation{height:80px;width:80px;background-color:#B76E79;border-radius:50%;padding-top:10px;}
+		tbody tr:nth-child(even){background-color:pink;}
+		tbody tr:hover{background-color:#decdf7}
+		ul li a{margin:20px;text-decoration:none;position:relative;}
+		ul li a:hover{color:purple;}
+		ul li a::before{content:"";display:block;height:4px;background-color:#00FA9A;position:absolute;top:0;left:0;width:0%;transition:all ease-in-out 250ms;}
+		ul li a:hover::before{width:100%;}
+
+		.circle{height:100px;width:100px;background-color:#B76E79;border-radius:50%;position:absolute;
+		    animation :circleanimation 5s infinite;}
+		@keyframes circleanimation  
+		{
+		0%{top:2075px; left:0px;}
+		50%{top:2075px; left:1150px;}
+		100%{top:2075px; left:0px;}
+		}
+
+	</style>
+</head>
+<body>
+    <header>
+	<h1>Explore Maldives</h1>
+        <nav>
+            <ul>
+                <li style=display:inline-block><a href="index.html">Home</a></li>
+                <li style=display:inline-block><a href="destinations.html">Destinations</a></li>
+		<li style=display:inline-block><a href="places.html">Places to Stay</a></li>
+		<li style=display:inline-block><a href="food.html">Local Food</a></li>
+                <li style=display:inline-block><a href="ContactUs.html">Contact Us</a></li>
+		<li style=display:inline-block><a href="faq.html">FAQ</a></li>
+		<li style=display:inline-block><a href="customer feedback tourism.html">Customer Feedback</a></li>
+		
+            </ul>
+        </nav>
+    </header>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Hotels</th>
+				<th>Prices</th>
+				<th>Facilities</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><h3>The St. Regis Maldives Vommuli Resort</h3><img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/06/82/4f/the-st-regis-maldives.jpg" alt="The St. Regis Maldives Vommuli Resort"></td>
+				<td>$2,300 per night</td>
+				<td>Ten extravagant room categories are showcased across 33 land villas and 44 overwater retreats. With six restaurants and bars, an Iridium Spa and the Vommuli House recreation center (try anti-gravity yoga here), you'll be spoiled by all that The St. Regis Maldives has to offer.</td>
+			</tr>
+
+			<tr>
+				<td><h3>Lux South Ari Atoll</h3><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/ac/b6/0d/lux-south-ari-atoll.jpg?w=900&h=500&s=1" alt="Lux South Ari Atoll"></td>
+				<td>$686 per night</td>
+				<td>You will ride your bicycle along the jetty, swim alongside whale sharks, hang out in your bungalow on stilts, dine at any of the eight restaurants, dance the night away, and partake in marine conservation.</td>
+			</tr>
+
+			<tr>
+				<td><h3>Four Seasons Resort Maldives at Kuda Huraa</h3><img src="https://media-cdn.tripadvisor.com/media/photo-s/2c/2e/97/47/kuda-huraa.jpg" alt="Four Seasons Resort Maldives at Kuda Huraa"></td>
+				<td>$1205 per night</td>
+				<td>Discover the legendary, heart-centred service within a charming village setting where a lagoon, flower gardens and a private spa island provide total serenity.</td>
+			</tr>
+
+			<tr>
+				<td><h3>Soneva Jani</h3><img src="https://soneva-offload-media-library.storage.googleapis.com/wp-content/uploads/2021/04/01204714/17265_Soneva-Jani-Chapter-Two-1-Bedroom-Water-Reserve-with-Slide.jpg" alt="Soneva Jani"></td>
+				<td>$2500 per night</td>
+				<td>Includes: overwater and island villas with private pools and waterslides, a spa, an overwater observatory, a children's club, and various water sports and dining options</td>
+			</tr>
+
+			<tr>
+				<td><h3>Cheval Blanc Randheli Private Island</h3><img src="https://images.prismic.io/chevalblanc/36f19ac5-7255-44df-9bde-7b8d472afc9a_Light+Web-Cheval+Blanc+Randheli+-+Horizon+Villa+-+Oliver+Fly+-+March+2023+%281%29.jpg?auto=compress,format&rect=0,322,2419,1295&w=1440&h=771" alt="Cheval Blanc Randheli Private Island"></td>
+				<td>$245,000 per week</td>
+				<td>Fine crafts, bespoke furniture and artwork enhance the interiors of this unparalleled villa. Outside, various terraces, tropical gardens, private beaches, an al-fresco dining pergola, and meditation pavilions bring relaxation to the tropical setting. A private spa treatment room, fitness centre and screening room complete this ultimate island stay.</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan=3>
+					<div class="circle"><div class="animation">Have a good stay in the Maldives!</div></div></td>
+			</tr>
+		</tfoot>
+	</table>
+
+    <footer>
+        <a href="https://travel.usnews.com/gallery/the-worlds-best-tourist-attractions">Other Places to Visit</a>
+	<p>This website was made by Marya Minal</p>
+    </footer>
+</body>
+</html>
